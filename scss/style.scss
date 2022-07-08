@@ -126,10 +126,9 @@ main{
 
     }
     #carouselExampleInterval{
-        margin-left: -50px;
-        animation: none;
-        transition: none; 
-        .img2{
+        margin-left: -50px;       
+        animation: none; 
+        .carousel-item, .d-block, .w-100, .mx-auto{
             height: 700px;
         }            
     }
@@ -154,6 +153,7 @@ main{
             transform: scale(1.1);
         }
     }
+    
     
     
     .redes, .links{      
@@ -207,11 +207,7 @@ main{
 
     .menu2{
         overflow-x: hidden
-    }
-    .carousel-item{
-        height: 600px;
-        width: 100%;
-        }
+    }    
     .comidas1{
         display: grid;
         margin-left: 100px;
@@ -286,50 +282,56 @@ main{
         flex-direction: column;
         text-align: center;
         padding: 10%;
+        h1{
+            margin-left: 80px;
+            font-size: 3rem;
+        }
         nav, ul, li{
             display: none;
             visibility: hidden;
         }
-    }
-   
-    
-    .imageMenu{
-        flex-direction:column; 
-        align-items: center;
-        .imageMenu_comidas, .imageMenu_minutas, .imageMenu_bebidas a{
-           margin-left: -190px ;                                        
-        }
-        .imageMenu_postres, .imageMenu_especiales, .imageMenu_pizzas a{
-            margin-left: -200px;
-        }
-           }    
-    .imgmenu2{
-        display: none;
-    }
-    
-    h1{
-        font-size: 1rem;      
-        padding-left: 40px;    
-    }
-    .text{ 
-        margin-top: -400px;       
-        display: flex;
-        font-size: medium;
-        margin-right: 80px;
-    }    
-    h2{
-        font-size: 30px;
-        text-align: center;
-    }
-        
-    h3{
-        text-align: center;
-    }
-    h6{
-        text-align: center;
-    }
+    }   
     main{
-         
+        #carouselExampleInterval{
+            margin-left: -50px;       
+            animation: none; 
+            .carousel-item, .d-block, .w-100, .mx-auto{
+                height: 200px;                
+            }            
+        } 
+        .text{                   
+            display: flex;
+            font-size: larger;
+            margin-right: 80px;
+        }                  
+        .imageMenu{
+            flex-direction:column; 
+            align-items: center;
+            .imageMenu_comidas, .imageMenu_minutas, .imageMenu_bebidas a{
+               margin-left: -190px ;                                        
+            }
+            .imageMenu_postres, .imageMenu_especiales, .imageMenu_pizzas a{
+                margin-left: -200px;
+            }
+        }    
+        .imgmenu2{
+            display: none;
+        }
+       
+        
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+            
+        h3{
+            text-align: center;
+        }
+        h6{
+            text-align: center;
+        }
+           
+        
         grid-template-columns: auto;                  
         .comidas1{
             grid-template-areas:"uno";
